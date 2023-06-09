@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+    --clr-silver: #c0c0c0;
+    --clr-lightBrown:#f7f3ed;
+    --clr-purple:#a84c30;
+}
+
+body {
+    background-color: var(--clr-purple);
+    color: var(--clr-lightBrown);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 1rem;
+    background-color:var(--clr-lightBrown);
+    color: var(--clr-purple);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 2rem
+
+}
+
+.marcador {
+    background-color: var(--clr-silver);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--clr-purple);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: var(--clr-lightBrown);
+    background-color: var(--clr-purple);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--clr-silver);
+}
+
+.marcador .nombre-jugador {
+    right: 85%;
+
+}
+
+.marcador .nombre-computadora {
+    left: 85%;
+}
+
+.marcador .puntos {
+    font-size: 1.5rem;
+}
+
+.elegi-tu-arma {
+    margin-bottom: 2rem;
+
+}
+
+.elegi-tu-arma h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma {
+    font-size: 2rem;
+    background-color: var(--clr-lightBrown);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+
+.mensaje .eleccion {
+    color: var(--clr-purple);
+    background-color: var(--clr-lightBrown);
+    padding: .25rem;
+    border-radius: .25rem;
+
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--clr-lightBrown);
+    color: var(--clr-purple);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disable {
+    display: none;
+}
+
